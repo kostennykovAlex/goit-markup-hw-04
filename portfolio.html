@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Web Studio-Portfolio</title>
+		<title>Web Studio</title>
 		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/normalize.css" />
 		<link
@@ -12,255 +12,250 @@
 			rel="stylesheet"
 		/>
 	</head>
+	  <!---================== Header ==================--->
+  <header class="header-section">
+     <div class="container">
+    <nav class="maine-nav">
+      <a href="index.html" class="logo">
+        <span class="logo-accent">Web</span>
+        Studio
+      </a>
+      <!---==================Info ==================--->
+      <ul class="site-nav list">
+        <li>
+          <a href="index.html" class="link">Студия</a>
+        </li>
+        <li>
+          <a href="portfolio.html" class="link">Портфолио</a>
+        </li>
+        <li>
+          <a href="/" aria-label="Контакты" class="link">Контакты</a>
+        </li>
+      </ul>
+    
+    <!---================== Contact ==================--->
+    <address class="address">
+      <ul class="address list">
+        <li class="address-item">
+          <img src="./img/nav-adress/envelope.svg" alt="mailto">
+          <a
+            href="mailto:info@devstudio.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+          >
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="address-item">
+          <img src="./img/nav-adress/phone.svg" alt="phone">
+          <a
+            href="tel:+380961111111"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link"
+          >
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+    </address>
+    </nav>
+  </div>
+  </header>
 	<body>
-		<!----header---->
-		<!-- Header -->
-		<header>
-			<div class="container header-flexbox">
-				<nav class="header-nav">
-					<a href="./index.html" lang="en" class="logo no-margin-bottom link">
-						Web
-						<span class="logo-header">Studio</span>
-					</a>
-
-					<ul class="site-nav list">
-						<li>
-							<a href="./index.html" class="link">Студия</a>
-						</li>
-						<li><a href="./portfolio.html" class="link current">Портфолио</a></li>
-						<li><a href="#" class="link">Контакты</a></li>
-					</ul>
-				</nav>
-
-				<ul class="contacts list">
-					<li class="contacts-item">
-						<img src="" alt="Конверт" />
-						<a href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer" class="link">
-							info@devstudio.com
-						</a>
-					</li>
-					<li class="contacts-item">
-						<img src="" alt="Телефон" />
-						<a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-					</li>
-				</ul>
-			</div>
-		</header>
-
-
 		<!----saite nav----->
 		<main>
-			<section class="section">
+			<section class="portfolio section">
 				<div class="container">
 					<h1 class="visually-hidden">Портфолио</h1>
-
-					<!-- Filter -->
 					<ul class="portfolio-filter list">
-						<li><button type="button">Все</button></li>
-						<li><button type="button">Веб-сайты</button></li>
-						<li><button type="button">Приложения</button></li>
-						<li><button type="button">Дизайн</button></li>
-						<li><button type="button">Маркетинг</button></li>
+						<li><button type="button" class="portfolio-button">Все</button></li>
+						<li><button type="button" class="portfolio-button">Веб-сайт</button></li>
+						<li><button type="button" class="portfolio-button">Приложения</button></li>
+						<li><button type="button" class="portfolio-button">Дизайн</button></li>
+						<li><button type="button" class="portfolio-button">Маркетинг</button></li>
 					</ul>
-				<!----project hero---->
-				<ul class="portfolio-projects list">
-					<li class="portfolio-card">
-						<a href="#" target="_blank" rel="noopener noreferrer" class="link">
-						<img src="./img/portfolio/notebook.jpg" alt="notebook" width="369" />
-						<div class="portfolio-project-information">
-							<h2>Технокряк</h2>
-							<p>Веб-сайт</p>
 
-							<!-- <p class="project-description">
-							Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для
-							цифрового шпионажа и атак на защищённые сервера конкурентов.
-						</p> -->
-						</div>
-					</a>
-				</li>
-				<li class="portfolio-card">
-					<a href="#" target="_blank" rel="noopener noreferrer" class="link">
-						<img src="./img/portfolio/poster.jpg" alt="poster" width="369" />
-						<div class="portfolio-project-information">
-							<h2>Постер New Orlean vs Golden Star</h2>
-							<p>Дизайн</p>
-							<!-- <p class="project-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis praesentium, culpa expedita et
-							dolorem animi? Impedit laboriosam dolor dignissimos numquam id! Quae ut dolorum nam earum doloremque
-							pariatur voluptas consectetur.
-						</p> -->
-						</div>
-					</a>
-				</li>
-				<li class="portfolio-card">
-					<a href="#" target="_blank" rel="noopener noreferrer" class="link">
-						<img src="./img/portfolio/seafood.jpg" alt="seafood" width="369" />
-						<div class="portfolio-project-information">
-							<h2>
-								Ресторан
-								<span lang="en">Seafood</span>
-							</h2>
-							<p>Приложение</p>
-							<!-- <p class="project-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illum eligendi dolores amet qui fugit
-							delectus. Eum sequi iusto ad aspernatur labore perspiciatis? Vero vel qui sed, officiis totam
-							adipisci!
-						</p> -->
-						</div>
-					</a>
-				</li>
-				<li class="portfolio-card">
-					<a href="#" target="_blank" rel="noopener noreferrer" class="link">
-						<img src="./img/portfolio/prime.jpg" alt="prime" width="369" />
-						<div class="portfolio-project-information">
-							<h2>
-								Проект
-								<span lang="en">Prime</span>
-							</h2>
-							<p>Маркетинг</p>
-							<!-- <p class="project-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatem dolor asperiores, incidunt
-							maiores mollitia delectus possimus. Nulla vel veritatis dolores assumenda corrupti odit, cum molestiae
-							magnam itaque. At, minus!
-						</p> -->
-						</div>
-					</a>
-				</li>
-				<li class="portfolio-card">
-					<a href="#" target="_blank" rel="noopener noreferrer" class="link">
-						<img src="./img/portfolio/boxes.jpg" alt="boxes" width="369" />
-						<div class="portfolio-project-information">
-							<h2>
-								Проект
-								<span lang="en">Boxes</span>
-							</h2>
-							<p>Приложение</p>
-							<!-- <p class="project-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatem dolor asperiores, incidunt
-							maiores mollitia delectus possimus. Nulla vel veritatis dolores assumenda corrupti odit, cum molestiae
-							magnam itaque. At, minus!
-						</p> -->
-						</div>
-					</a>
-				</li>
-				<li class="portfolio-card">
-					<a href="#" target="_blank" rel="noopener noreferrer" class="link">
-						<img src="./img/portfolio/solutions.jpg" alt="solutions" width="369" />
-						<div class="portfolio-project-information">
-							<h2 lang="en">Inspiration has no Borders</h2>
-							<p>Веб-сайт</p>
-							<!-- <p class="project-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatem dolor asperiores, incidunt
-							maiores mollitia delectus possimus. Nulla vel veritatis dolores assumenda corrupti odit, cum molestiae
-							magnam itaque. At, minus!
-						</p> -->
-						</div>
-					</a>
-				</li>
-				<li class="portfolio-card">
-					<a href="#" target="_blank" rel="noopener noreferrer" class="link">
-						<img src="./img/portfolio/limited.jpg" alt="limited-edition" width="369" />
-						<div class="portfolio-project-information">
-							<h2>
-								Издание
-								<span lang="en">Limited Edition</span>
-							</h2>
-							<p>Дизайн</p>
-							<!-- <p class="project-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatem dolor asperiores, incidunt
-							maiores mollitia delectus possimus. Nulla vel veritatis dolores assumenda corrupti odit, cum molestiae
-							magnam itaque. At, minus!
-						</p> -->
-						</div>
-					</a>
-				</li>
-				<li class="portfolio-card">
-					<a href="#" target="_blank" rel="noopener noreferrer" class="link">
-						<img src="./img/portfolio/lab.jpg" alt="project-lab" width="369" />
-						<div class="portfolio-project-information">
-							<h2>
-								Проект
-								<span lang="en">LAB</span>
-							</h2>
-							<p>Маркетинг</p>
-							<!-- <p class="project-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatem dolor asperiores, incidunt
-							maiores mollitia delectus possimus. Nulla vel veritatis dolores assumenda corrupti odit, cum molestiae
-							magnam itaque. At, minus!
-						</p> -->
-						</div>
-					</a>
-				</li>
-				<li class="portfolio-card">
-					<a href="#" target="_blank" rel="noopener noreferrer" class="link">
-						<img src="./img/portfolio/growing.jpg" alt="g0rowing-business" width="369" />
-						<div class="portfolio-project-information">
-							<h2 lang="en">Growing Business</h2>
-							<p>Приложение</p>
-							<!-- <p class="project-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatem dolor asperiores, incidunt
-							maiores mollitia delectus possimus. Nulla vel veritatis dolores assumenda corrupti odit, cum molestiae
-							magnam itaque. At, minus!
-						</p> -->
-						</div>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</section>
-</main>
-
-		<!-- Footer -->
-		<footer class="footer">
-			<div class="container footer-felxbox">
-				<div class="footer-information footer-felxbox">
-					<div class="footer-contacts-block">
-						<a href="./index.html" lang="en" class="logo link">
-							Web
-							<span class="logo-footer">Studio</span>
-						</a>
-						<address class="address">
-							г. Киев, пр-т Леси Украинки, 26
-						</address>
-
-						<ul class="contacts-footer list">
-							<li>
-								<a href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer" class="link">
-									info@devstudio.com
-								</a>
-							</li>
-							<li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-						</ul>
-					</div>
-			<!-----social networks----->
-			<div class="footer-contacts-block">
-				<p class="call-to-action"><b>Присоединяйтесь</b></p>
-				<ul class="footer-social-links-list list">
-						<li>
-							<a href="#" target="_blank"><img src="./img/portfolio/social-link/instagram2.svg" alt="instagram" /></a>
+					<!----project hero---->
+					<ul class="portfolio-projects list">
+						<li class="portfolio-card">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="link">
+								<img src="./img/portfolio/notebook.jpg" alt="notebook" width="370"height="294" class="link" />
+								<!-- <div class="overlay-project-information"> -->
+								<!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit.  -->
+								<!-- velit pariatur eligendi quis. -->
+								<!-- </div> -->
+								<div class="portfolio-project-information">
+								<h2>Технокряк</h2>
+								<p>Веб-сайт</p>
+								</div>
+							</a>
 						</li>
-						<li>
-							<a href="#" target="_blank"><img src="./img/portfolio/social-link/twitter.svg" alt="twitter" /></a>
+						<li class="portfolio-card">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="link">
+								<img src="./img/portfolio/poster.jpg" alt="poster" width="370" class="link" />
+									<!-- <div class="overlay-project-information"> -->
+									<!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit.  -->
+									<!-- velit pariatur eligendi quis. -->
+									<!-- </div> -->
+								<div class="portfolio-project-information">
+									<h2>
+										Постер
+										<span lang="en">New Orlean vs Golden Star</span>
+									</h2>
+									<p>Дизайн</p>
+								</div>
+							</a>
 						</li>
-						<li>
-							<a href="#" target="_blank"><img src="./img/portfolio/social-link/facebook.svg" alt="facebook" /></a>
+						<li class="portfolio-card">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="link">
+								<img src="./img/portfolio/seafood.jpg" alt="seafood" width="370" class="link" />
+									<!-- <div class="overlay-project-information"> -->
+									<!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit.  -->
+									<!-- velit pariatur eligendi quis. -->
+									<!-- </div> -->
+								<div class="portfolio-project-information">
+									<h2>
+										Ресторан
+										<span lang="en">Seafood</span>
+									</h2>
+									<p>Приложение</p>
+								</div>
+							</a>
 						</li>
-						<li>
-							<a href="#" target="_blank"><img src="./img/portfolio/social-link/linkedin.svg" alt="linkedin" /></a>
+						<li class="portfolio-card">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="link">
+								<img src="./img/portfolio/prime.jpg" alt="prime" width="370" class="link" />
+									<!-- <div class="overlay-project-information"> -->
+									<!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit.  -->
+									<!-- velit pariatur eligendi quis. -->
+									<!-- </div> -->
+								<div class="portfolio-project-information">
+									<h2>
+										Проект
+										<span lang="en">Prime</span>
+									</h2>
+									<p>Маркетинг</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio-card">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="link">
+								<img src="./img/portfolio/boxes.jpg" alt="boxes" width="370" class="link" />
+									<!-- <div class="overlay-project-information"> -->
+									<!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit.  -->
+									<!-- velit pariatur eligendi quis. -->
+									<!-- </div> -->
+								<div class="portfolio-project-information">
+									<h2>
+										Проект
+										<span lang="en">Boxes</span>
+									</h2>
+									<p>Приложение</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio-card">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="link">
+								<img src="./img/portfolio/solutions.jpg" alt="solutions" width="370" class="link" />
+									<!-- <div class="overlay-project-information"> -->
+									<!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit.  -->
+									<!-- velit pariatur eligendi quis. -->
+									<!-- </div> -->
+								<div class="portfolio-project-information">
+									<h2><span lang="en">Inspiration has no Borders</span></h2>
+									<p>Веб-сайт</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio-card">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="link">
+								<img src="./img/portfolio/limited.jpg" alt="limited-edition" width="370" class="link" />
+								<!-- <div class="overlay-project-information"> -->
+								<!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit.  -->
+								<!-- Quibusdam mollitia quas perspiciatis ex maxime unde 
+								aspernatur  -->
+								<!-- velit pariatur eligendi quis. -->
+								<!-- </div> -->
+								<div class="portfolio-project-information">
+									<h2>
+										Издание
+										<span lang="en">Limited Edition</span>
+									</h2>
+									<p>Дизайн</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio-card">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="link">
+								<img src="./img/portfolio/lab.jpg" alt="project-lab" width="370" class="link" />
+								<!-- <div class="overlay-project-information"> -->
+									<!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam mollitia quas perspiciatis ex maxime unde aspernatur velit pariatur eligendi quis. -->
+								<!-- </div> -->
+								<div class="portfolio-project-information">
+									<h2>
+										Проект
+										<span lang="en">LAB</span>
+									</h2>
+									<p>Маркетинг</p>
+								</div>
+							</a>
+						</li>
+						<li class="portfolio-card">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="link">
+								<img src="./img/portfolio/growing.jpg" alt="g0rowing-business" width="370" class="link" />
+								<!-- <div class="overlay-project-information"> -->
+									<!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit.  -->
+									<!-- Quibusdam mollitia quas perspiciatis ex maxime unde aspernatur  -->
+									<!-- velit pariatur eligendi quis. -->
+								<!-- </div> -->
+								<div class="portfolio-project-information">
+									<h2>
+										<span lang="en">Growing Business</span>
+									</h2>
+									<p>Приложения</p>
+								</div>
+							</a>
 						</li>
 					</ul>
 				</div>
-			</div>
-			<div class="footer-information form">
-				<div>
-					<p class="call-to-action"><b>Подпишитесь на рассылку</b></p>
-					<form>
-						<input type="email" placeholder="E-mail" />
-						<input type="submit" value="Подпиcаться" />
-					</form>
-				</div>
-			</div>
-		</div>
-	</footer>
-</body>
+			</section>
+			    <!--============= Footer ==============-->
+				    <footer class="footer-section">
+      <div class="container footer-flexbox">
+        <div class="-informafootertion footer-flexbox">
+          <div class="footer-contacts-block">
+        <a href="index.html" class="footer-logo">
+          <span class="footer-logo-accent">Web</span>
+          Studio
+        </a>
+
+      <!---============ Address =============--->
+        <address class="footer-adress location-adress">
+          <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
+        </address>
+
+        <address class="footer-adress">
+          <ul class="footer-contacts list">
+            <li class="footer-contacts adress">
+              <a
+                href="mailto:info@devstudio.com"
+                target="_blank"
+                rel="noopener noreferrer" class="link"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+
+            <li class="footer-adress-contacts">
+              <a href="tel:+380961111111" class="link"> +38 096 111 11 11 </a>
+            </li>
+          </ul>
+        </address>
+        </div>
+       </div>
+      </div>
+    </footer>
+  </body>
 </html>
