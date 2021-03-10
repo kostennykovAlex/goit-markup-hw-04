@@ -5,33 +5,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Web Studio</title>
-		<!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
-		<link rel="stylesheet" href="./css/normalize.css" />
-		<link rel="stylesheet" href="./css/style.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<!-- <link rel="stylesheet" href="./css/animate.css" /> -->
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
 		<!---================== Header ==================--->
 		<header class="header-section">
 			<div class="container">
 				<nav class="maine-nav">
-					<a href="index.html" class="logo">
+					<a href="index.html" class="logo animate__lightSpeedInRight">
 						<span class="logo-accent">Web</span>
 						Studio
 					</a>
 					<!---==================Info ==================--->
 					<ul class="site-nav list">
 						<li>
-							<a href="index.html" class="link current">Студия</a>
+							<a href="index.html" class="animate__lightSpeedInLeft link current">Студия</a>
 						</li>
 						<li>
-							<a href="portfolio.html" class="link current">Портфолио</a>
+							<a href="portfolio.html" class="animate__lightSpeedInLeft link">Портфолио</a>
 						</li>
 						<li>
-							<a href="/" aria-label="Контакты" class="link current">Контакты</a>
+							<a href="/" aria-label="Контакты" class="animate__lightSpeedInLeft link">Контакты</a>
 						</li>
 					</ul>
 
@@ -70,7 +72,7 @@
 					<div class="container">
 						<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
 						<!----==============BUTTON==============---->
-						<button type="button" class="hero-button">Заказать услугу</button>
+						<button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
 					</div>
 				</div>
 			</section>
@@ -82,7 +84,7 @@
 					<ul class="advantages-features list">
 						<li class="advantages-info">
 							<div class="advantages-icon-place">
-								<svg class="advantages-icon-place" width="70px" height="70px">
+								<svg class="advantages-icon">
 									<use href="./img/iconmoon/sprite.svg#icon-antenna"></use>
 								</svg>
 								<!-- <img src="./img/features/antenna.svg" alt="satellite" /> -->
@@ -96,7 +98,7 @@
 						<li class="advantages-info">
 							<div class="advantages-icon-place">
 								<!-- <img src="./img/features/clock.svg" alt="clock" /> -->
-								<svg class="advantages-icon-place" width="70px" height="70px">
+								<svg class="advantages-icon">
 									<use href="./img/iconmoon/sprite.svg#icon-clock"></use>
 								</svg>
 							</div>
@@ -109,7 +111,7 @@
 						<li class="advantages-info">
 							<div class="advantages-icon-place">
 								<!-- <img src="./img/features/diagram.svg" alt="nootebook" /> -->
-								<svg class="advantages-icon-place" width="70px" height="70px">
+								<svg class="advantages-icon">
 									<use href="./img/iconmoon/sprite.svg#icon-diagram"></use>
 								</svg>
 							</div>
@@ -122,7 +124,7 @@
 						<li class="advantages-info">
 							<div class="advantages-icon-place">
 								<!-- <img src="./img/features/astronaut.svg" alt="astronavt" /> -->
-								<svg class="advantages-icon-place" width="70px" height="70px">
+								<svg class="advantages-icon">
 									<use href="./img/iconmoon/sprite.svg#icon-astronaut"></use>
 								</svg>
 							</div>
@@ -469,5 +471,16 @@
 				</div>
 			</div>
 		</footer>
+
+		<div class="modal-backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button class="close-button" data-modal-close>
+					<svg class="close-button-icon">
+						<use href="./img/iconmoon/sprite.svg#icon-close-black-18dp-2-1"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
